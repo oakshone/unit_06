@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit 06</title>
+    
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+     <div class="max-w-6xl mx-auto">
+    <header class="grid grid-cols-[auto_44px_44px_44px] gap-x-2 p-2 border-b sm:grid-cols-[auto_44px_44px_44px]">
+        <img src="images/logo.png" width="100" height="85">
+        <a class="border w-10 h-10 flex justify-around rounded-full hover:bg-slate-200" href="#"><img class="w-6" src="images/person-fill.svg"></a>
+        <a class="border w-10 h-10 flex justify-around rounded-full hover:bg-slate-200" href="#"><img class="w-6" src="images/bag-heart-fill.svg"></a>
+        <a class="border w-10 h-10 flex justify-around rounded-full hover:bg-slate-200" href="#"><img class="w-6" src="images/burger.svg"></a>
+    </header>
+
+    <nav class="bg-slate-200">
+        <ul class="flex flex-col sm:flex-row m-2">
+            <li class="text-black border-b border-neutral-700 sm:border-b-0">
+            <a href="#" class=" border rounded block py-1 px-2 hover:bg-gray-300">Font Family</a>
+            </li>
+            <li class="text-black border-b border-neutral-700 sm:border-b-0">
+            <a href="#" class="border rounded block py-1 px-2 hover:bg-gray-300">Breakpoint Overrides</a>
+            </li>
+            <li class="text-black border-b border-neutral-700 sm:border-b-0">
+            <a href="#" class="border rounded block py-1 px-2 hover:bg-gray-300">Color Overrides</a>
+            </li>
+        </ul>
+    </nav>
+<main>
+<h1>Overriding Tailwind Defaults</h1>
+ <h2>Font Family Overrides</h2>
+ <p>Tailwind comes with three built-in font families (sans, serif and mono).</p>
+ <img src="images/styles.PNG" alt="styles">
+ <p>We can add our own <a href="https://fonts.google.com/">Google fonts</a> using a link in the html document head</p>
+ <img src="images/font.png" alt="font">
+ <p>We than add an addition font family variable in the source css file</p>
+ <img src="images/source_css.PNG" alt="source_css">
+ <p>In the HTML we add a class using the new font and variable name we created like this</p>
+ <img src="images/new_font.PNG" alt="new_font">
+ <p class="font-handwrite text-xl">When used, it would render like this example.</p>
+ <h2>Breakpoint Overrides</h2>
+ <p>Tailwind comes with 5 built in media query breakpoints for creating responsive designs.</p>
+ <img src="images/breakpoint.png" alt="breakpoint">
+ <p>You can override any of these if they are not breaking where you woiuld like by adding to the source css file. In this example I am changin the small break point from 40rem (640px) to 32rem (512px).</p>
+ <img src="images/override.PNG" alt="override">
+ <h2>Color Overrides</h2>
+ <p>Tailwind comes with <a href="" >many many default color</a> that are not realy that useful. If we are working with a UX design team and they provide a set of colors, we can add them to your tailwind setup so these new colors are named and ready for use In this case, the UX team provided the color palette for our site.</p>
+<img src="images/palette.PNG" alt="palette">
+<p>I also like to have a series of grey colors for card borders, shadows, etc to compliment any color scheme I am using. So in addition to these colors, I am going to add a series of greys including black and white. These will also be added as variables in my source css file like this.</p>
+<img src="images/color_scheme.PNG" alt="color_scheme">
+<img src="images/palette_ch.png" alt="palette_ch">
+<p>These colors can be used in the same way as the default colors.</p>
+<p>If I were to make changes to the font family, the breakpoints and colors, the source css file (in my case the input.css) would have all these modifications in side the @theme{}</p>
+<img src="images/theme.PNG" alt="theme">
+</main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer>
+        <p class="text-center text-md text-neutral-700 bg-slate-200">&copy; Jackson Nieporte &bull; DWDD 2620</p>
+    </footer>
+    <script src="js/scripts.js" type="module"></script>
+</body>
+</html>

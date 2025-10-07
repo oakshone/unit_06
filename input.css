@@ -1,0 +1,46 @@
+    @import "tailwindcss";
+    @config "./tailwind.config.js";
+
+@theme {
+    --font-handwrite: "Roboto", sans-serif;
+
+    --breakpoint-sm: 32rem;
+
+    /* Remove Default Tailwind Colors */
+    --color-*: initial;
+
+    --color-mylavender: #D8DDEC;
+    --color-mypearl: #DADDCA;
+    --color-mylavender: #EFE6F3;
+    --color-myplatinum: #E8DBD5;
+    --color-mythistle:  #D4BED0;
+    
+    --color-mygrey-0: #ffffff;
+    --color-mygrey-5: #F2F2F2;
+    --color-mygrey-10: #e5e5e5;
+    --color-mygrey-20: #cccccc;
+    --color-mygrey-30: #b3b3b3;
+    --color-mygrey-40: #999999;
+    --color-mygrey-50: #808080;
+    --color-mygrey-60: #666666;
+    --color-mygrey-70: #4d4d4d;
+    --color-mygrey-80: #333333;
+    --color-mygrey-90: #1a1a1a;
+    --color-mygrey-100: #000000;
+
+}
+main h1 {
+    @apply px-2 pt-6 text-2xl font-bold p-2
+}
+main h2 {
+    @apply px-2 pt-3 pb-0 text-xl border-b-2 
+}
+main p {
+    @apply px-2 pt-2 
+}
+main img {
+    @apply px-2 pt-2
+}
+main a {
+    @apply  text-slate-200
+}
